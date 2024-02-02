@@ -77,10 +77,14 @@
         width: 18rem;
         height: 18rem;
     }
+    .skills-container {
+        margin: 2rem 0;
+    }
 }
 
 @media (max-width: 600px) {
     .skills-container {
         padding: 0;
+        margin: 1rem 0;
     }
 }

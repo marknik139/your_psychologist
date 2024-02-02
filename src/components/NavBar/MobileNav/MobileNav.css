@@ -25,7 +25,7 @@
     transform: translateX(0);
 }
 
-.mobile-menu img {
+.mobile-menu .logo {
     margin-bottom: 3rem;
 }
 

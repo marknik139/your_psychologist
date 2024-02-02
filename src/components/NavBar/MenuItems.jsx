@@ -1,13 +1,16 @@
 const MenuItems = () => {
     return (
         <>
-            <img className="logo" src="./assets/images/logo.svg" alt="logo"/>
+            <section className="logo">
+                <span className="logo-title">Ваш психолог</span>
+                <img className="logo-image" src="./assets/images/logo.svg" alt="logo"/>
+            </section>
             <ul>
                 <li>
                     <a className="menu-item">Главная</a>
                 </li>
                 <li>
-                    <a className="menu-item">Навыки</a>
+                    <a className="menu-item">С чем я работаю</a>
                 </li>
                 <li>
                     <a className="menu-item">Опыт работы</a>

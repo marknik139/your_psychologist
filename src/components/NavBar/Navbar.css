@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@500&display=swap');
 
 .nav-wrapper {
-    background: rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.3);
     padding: 0.5rem 0;
     position: sticky;
     top: 0;
@@ -61,7 +61,7 @@
     content: " ";
     width: 2rem;
     height: 0.2rem;
-    background: linear-gradient(90deg, #32a854 0%, #257a3d 100%);
+    background: linear-gradient(90deg, #32a854 0%, #9dbd29 100%);
     border-radius: 0.5rem;
     position: absolute;
     bottom: -0.6rem;
@@ -83,7 +83,7 @@
     align-items: center;
     justify-content: center;
     color: #fff;
-    background: linear-gradient(90deg, #32a854 0%, #257a3d 100%);
+    background: linear-gradient(90deg, #32a854 0%, #9dbd29 100%);
     padding: 0.6rem 2rem;
     border: none;
     outline: 1.5px solid transparent;
@@ -108,7 +108,7 @@
     border: none;
     border-radius: 0.4rem;
     color: #fff;
-    background: linear-gradient(90deg, #32a854 0%, #257a3d 100%);
+    background: linear-gradient(90deg, #32a854 0%, #9dbd29 100%);
     line-height: 0;
     cursor: pointer;
     transition: all 0.4s ease;

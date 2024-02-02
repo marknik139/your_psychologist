@@ -13,7 +13,7 @@ const MenuItems = () => {
                     <a className="menu-item">С чем я работаю</a>
                 </li>
                 <li>
-                    <a className="menu-item">Опыт работы</a>
+                    <a className="menu-item">Мое образование</a>
                 </li>
                 <li>
                     <a className="menu-item">Контакты</a>

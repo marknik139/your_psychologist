@@ -36,7 +36,7 @@ const Education = () => {
     };
 
     return (
-        <section className="education-container">
+        <section className="education-container" id="education">
             <h5>Моё образование</h5>
             <div className="education-content">
                 <div className="arrow-right" onClick={slideRight}>

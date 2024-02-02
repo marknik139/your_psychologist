@@ -12,7 +12,7 @@ const Skills = () => {
     };
 
     return (
-        <section className="skills-container">
+        <section className="skills-container" id="cases">
             <h5>С чем я работаю</h5>
             <div className="skills-content">
                 <div className="skills">

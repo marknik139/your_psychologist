@@ -7,19 +7,19 @@ const MenuItems = () => {
             </section>
             <ul>
                 <li>
-                    <a className="menu-item">Главная</a>
+                    <a className="menu-item" href="#hero">Главная</a>
                 </li>
                 <li>
-                    <a className="menu-item">С чем я работаю</a>
+                    <a className="menu-item" href="#cases">С чем я работаю</a>
                 </li>
                 <li>
-                    <a className="menu-item">Мое образование</a>
+                    <a className="menu-item" href="#education">Мое образование</a>
                 </li>
                 <li>
-                    <a className="menu-item">Контакты</a>
+                    <a className="menu-item" href="#contacts">Контакты</a>
                 </li>
-                <button className="contact-btn" onClick={() => {}}>
-                    Написать мне
+                <button className="contact-btn">
+                    <a className="menu-item menu-button" href="#contacts">Написать мне</a>
                 </button>
             </ul>
         </>

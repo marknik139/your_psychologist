@@ -48,7 +48,7 @@
     margin: 0 1.5rem;
 }
 
-.menu-item {
+.menu-item{
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 500;
@@ -57,7 +57,7 @@
     cursor: pointer;
 }
 
-.menu-item::before {
+.menu-item:not(.menu-button)::before {
     content: " ";
     width: 2rem;
     height: 0.2rem;

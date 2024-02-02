@@ -2,7 +2,7 @@ import React from "react";
 import "./Hero.css";
 const Hero = () => {
     return (
-        <section className="hero-container">
+        <section className="hero-container" id="hero">
             <div className="hero-content">
                 <h2>Ваш психолог</h2>
                 <p>

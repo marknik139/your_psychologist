@@ -7,15 +7,16 @@
     flex: 1;
 }
 
-.skills-info-card h6 {
+.skills-info-card h5 {
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 600;
     padding: 0.8rem 2rem;
     background: linear-gradient(180deg, #2ab653 30%, #9dbd29 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     border-bottom: 1.5px solid #32a854;
+    margin-bottom: 0;
 }
 
 .skills-info-content {
@@ -27,7 +28,9 @@
     font-weight: 600;
 }
 
-.skills-subtitle > h7 {
+.skills-subtitle > h6 {
+    font-size: 1.1rem;
+    font-weight: 500;
     color: #fff;
 }
 
@@ -67,7 +70,7 @@
 }
 
 @media (max-width: 1025px) {
-    .skills-info-card h6 {
+    .skills-info-card h5 {
         font-size: 1.1rem;
     }
     .skill-info p {

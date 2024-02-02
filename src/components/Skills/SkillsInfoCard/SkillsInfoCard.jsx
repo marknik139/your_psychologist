@@ -4,10 +4,10 @@ import "./SkillsInfoCard.css"
 const SkillsInfoCard = ({heading, skills}) => {
     return (
         <div className="skills-info-card">
-            <h6>{heading}</h6>
+            <h5>{heading}</h5>
             <div className="skills-info-content">
                 <div className="skills-subtitle">
-                    <h7>Из чего состоит мой подход?</h7>
+                    <h6>Из чего состоит мой подход?</h6>
                 </div>
                 {skills.map((item, index) => (
                     <div className="skill-item" key={`skill_${index}`}>

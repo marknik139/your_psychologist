@@ -11,8 +11,8 @@ const ContactMe =  () => {
                 <div style={{flex: 1}}>
                     <ContactInfoCard
                         iconUrl="./assets/images/mail.svg"
-                        text="mariayuzefov@gmail.com"
-                        href="mailto:mariayuzefov@gmail.com"
+                        text="mariauzefov@gmail.com"
+                        href="mailto:mariauzefov@gmail.com"
                     />
                     <ContactInfoCard
                         iconUrl="./assets/images/telegram.svg"

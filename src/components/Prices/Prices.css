@@ -1,0 +1,30 @@
+.prices-container {
+    margin: 4rem 0;
+    position: relative;
+}
+
+.prices-container h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.prices-content {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .prices-container h5 {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+    .prices-content {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+}

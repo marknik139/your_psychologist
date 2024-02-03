@@ -1,0 +1,65 @@
+.price-card {
+    background: rgba(0, 26, 8, 1);
+    border-radius: 0.65rem;
+    border: 1.5px solid #32a854;
+    padding: 1.5rem;
+    margin: 0 1rem;
+    min-height: 19rem;
+    flex: 1;
+}
+
+.price-card h6 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    background: linear-gradient(90deg, #32a854 0%, #9dbd29 100%);
+    border-radius: 0.3rem;
+    padding: 0.4rem 0.6rem;
+    margin: 0 1rem 1.3rem;
+}
+
+.price-card ul li {
+    list-style: none;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.price-card ul li::after {
+    content: " ";
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #32a854;
+    border-radius: 0.5rem;
+    position: absolute;
+    left: -1.3rem;
+    top: 0.35rem;
+}
+
+@media (max-width: 1290px) {
+    .price-card {
+        margin: 0;
+    }
+    .price-card h6 {
+        font-size: 1rem;
+    }
+    .price-card ul li {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .price-card {
+        min-height: 15rem;
+    }
+}

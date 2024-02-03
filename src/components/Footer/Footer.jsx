@@ -3,7 +3,9 @@ import "./Footer.css";
 
 const Footer = () => {
     return (
-        <div className="footer">© 2024 Ваш психолог, все права защищены</div>
+        <footer>
+            <div className="footer">© 2024 Ваш психолог, все права защищены</div>
+        </footer>
     )
 };
 

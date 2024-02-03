@@ -5,11 +5,11 @@ import PriceCard from "./PriceCard/PriceCard";
 
 const Prices = () => {
     return (
-        <section className="prices-container">
+        <section className="prices-container" id="prices">
             <h5>Цены</h5>
             <div className="prices-content">
                 {PRICES.map((item) => (
-                    <PriceCard item={item}/>
+                    <PriceCard key={item.title} item={item}/>
                 ))}
             </div>
         </section>

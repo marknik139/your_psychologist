@@ -16,6 +16,9 @@ const MenuItems = () => {
                     <a className="menu-item" href="#education">Мое образование</a>
                 </li>
                 <li>
+                    <a className="menu-item" href="#prices">Цены</a>
+                </li>
+                <li>
                     <a className="menu-item" href="#contacts">Контакты</a>
                 </li>
                 <button className="contact-btn">

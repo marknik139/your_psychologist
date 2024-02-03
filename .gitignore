@@ -6,6 +6,9 @@
 # ide
 .idea
 
+# env
+.env
+
 # testing
 /coverage
 

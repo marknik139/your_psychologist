@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import axios from 'axios';
 import "./ContactForm.css"
 
 const ContactForm = () => {
@@ -18,7 +19,31 @@ const ContactForm = () => {
         }));
     };
 
-    const handleSubmit = (e) => {
+    const generateMessage = (formData) => (
+    `Сообщение от ${formData.firstname} ${formData.lastname}\n
+    Дата и время по Израилю:
+    ${getCurrentDateTimeIsrael()}\n
+    Email для обратной связи:
+    ${formData.email}\n
+    Сообщение:
+    \r${formData.message}`
+    );
+
+    const getCurrentDateTimeIsrael = () => {
+        const currentDate = new Date();
+        const options = {
+            timeZone: 'Israel',
+            hour12: false,
+            hour: '2-digit',
+            minute: '2-digit',
+            day: '2-digit',
+            month: '2-digit',
+            year: 'numeric'
+        };
+        return currentDate.toLocaleString('en-IL', options);
+    }
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
         if (formData.firstname.trim() === "" || formData.lastname.trim() === "" || formData.email.trim() === "" || formData.message.trim() === "") {
             alert("Пожалуйста заполните все поля формы");
@@ -29,7 +54,6 @@ const ContactForm = () => {
             alert("Пожалуйста введите корректный адрес электронной почты");
             return;
         }
-        // send email
         setFormData(prevState => ({
             ...prevState,
             firstname: "",
@@ -37,7 +61,29 @@ const ContactForm = () => {
             email: "",
             message: "",
         }));
-        alert("Сообщение успешно отправлено");
+        try {
+            const message = generateMessage(formData);
+            await sendMessageToTelegram(message);
+            alert("Сообщение успешно отправлено");
+        } catch (e) {
+            alert(e.message)
+        }
+    };
+
+    const sendMessageToTelegram = async (message) => {
+        try {
+            const API_TOKEN = process.env.REACT_APP_BOT_TOKEN;
+            const CHAT_ID = process.env.REACT_APP_CHAT_ID;
+
+            const url = `https://api.telegram.org/bot${API_TOKEN}/sendMessage`;
+            const data = {
+                chat_id: CHAT_ID,
+                text: message,
+            };
+            await axios.post(url, data);
+        } catch (e) {
+            throw new Error('Произошла ошибка при отправке сообщения');
+        }
     };
 
 

@@ -3,7 +3,7 @@ const MenuItems = () => {
         <>
             <section className="logo">
                 <span className="logo-title">Ваш психолог</span>
-                <img className="logo-image" src="./assets/images/logo.svg" alt="logo"/>
+                <img className="logo-image" src="./assets/images/logo.svg" alt=""/>
             </section>
             <ul>
                 <li>

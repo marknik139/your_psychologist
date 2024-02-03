@@ -17,6 +17,9 @@
     width: 60vw;
     height: 100vh;
     background-color: #257a3d;
+    -webkit-box-shadow: 3px 4px 9px 1px rgba(3,31,8,1);
+    -moz-box-shadow: 3px 4px 9px 1px rgba(3,31,8,1);
+    box-shadow: 3px 4px 9px 1px rgba(3,31,8,1);
     padding: 2rem;
 }
 

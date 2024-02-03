@@ -17,7 +17,7 @@ const EducationCard = ({details}) => {
         <div className="education-card">
             <h6>{details.title}</h6>
             <div
-                onClick={() => handleDownload(details.url, `${details.title.split(' ').join('_')}.pdf`)}
+                onClick={() => handleDownload(details.url, `${details.title.split(' ').join('_')}.png`)}
                 className="education-duration"
             >
                 {`Скачать диплом от ${details.date}`}

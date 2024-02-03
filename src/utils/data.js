@@ -59,7 +59,7 @@ export const EDUCATION = [
     {
         title: 'Московский педагогический государственный университет. Специальное (дефектологическое) образование',
         date: '19 июля 2022 года',
-        url: './assets/docs/diploma_mpgu.pdf',
+        url: './assets/docs/diploma_mpgu.png',
         description: [
           "Психология",
           "Специальная педагогика и психология",
@@ -71,7 +71,7 @@ export const EDUCATION = [
     {
         title: 'Московский институт психоанализа. Клинический психолог (Профессиональная переподготовка)',
         date: '25 июня 2021 года',
-        url: './assets/docs/diploma_mip.pdf',
+        url: './assets/docs/diploma_mip.png',
         description: [
           "Клиническая психология",
           "Нейропсихология",
@@ -83,7 +83,7 @@ export const EDUCATION = [
     {
         title: 'Институт коррекционной педагогики Российской академии образования. Коррекционная педагогика',
         date: '3 октября 2022 года',
-        url: './assets/docs/diploma_ikp.pdf',
+        url: './assets/docs/diploma_ikp.png',
         description: [
           "Специальная психология",
           "Психолого-педагогическая диагностика при расстройствах аутистического спектра",

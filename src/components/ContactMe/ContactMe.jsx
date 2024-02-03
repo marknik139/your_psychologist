@@ -12,10 +12,12 @@ const ContactMe =  () => {
                     <ContactInfoCard
                         iconUrl="./assets/images/mail.svg"
                         text="mariayuzefov@gmail.com"
+                        href="mailto:mariayuzefov@gmail.com"
                     />
                     <ContactInfoCard
                         iconUrl="./assets/images/telegram.svg"
                         text="@mariayuzefov"
+                        href="tg://resolve?domain=mariayuzefov"
                     />
                 </div>
                 <div style={{flex: 1}}>

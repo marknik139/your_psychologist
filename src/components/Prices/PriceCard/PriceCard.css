@@ -8,6 +8,11 @@
     flex: 1;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .price-card h6 {
     display: flex;
     justify-content: center;

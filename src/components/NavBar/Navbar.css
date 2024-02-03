@@ -102,7 +102,6 @@
     width: 2.5rem;
     height: 2.5rem;
     font-size: 1.5rem;
-    display: flex;
     align-items: center;
     justify-content: center;
     border: none;
@@ -130,7 +129,7 @@
 
 @media (max-width: 769px) {
     .menu-btn {
-        display: block;
+        display: flex;
     }
     .nav-content ul {
         display: none;

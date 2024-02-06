@@ -11,15 +11,17 @@ const Prices = () => {
     useEffect(() => {
         async function fetchMyAPI() {
             const geoToken = process.env.REACT_APP_GEO_TOKEN;
-            const geoIpAddress = process.env.REACT_APP_GEO_IP;
             try {
-                let res = await axios.get(`https://ipinfo.io/${geoIpAddress}?token=${geoToken}`);
-                setCountry(res.data.country);
+                const {data: {ip}} = await axios.get('https://api.ipify.org?format=json');
+                if (ip) {
+                    const {data: {country}} = await axios.get(`https://ipinfo.io/${ip}?token=${geoToken}`);
+                    setCountry(country);
+                }
             } catch (e) {
                 console.error(e);
             }
         }
-        fetchMyAPI()
+        fetchMyAPI();
     }, []);
 
     return (

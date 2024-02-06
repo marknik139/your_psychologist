@@ -4,7 +4,7 @@ const Hero = () => {
     return (
         <section className="hero-container" id="hero">
             <div className="hero-content">
-                <h2>Ваш психолог</h2>
+                <h2>Уютный психолог</h2>
                 <p>
                     Здравствуйте! Меня зовут Мария. Я практикующий психолог, специализирующийся в клинической психологии.
                     Моя задача - поддерживать вас на пути к преодолению эмоциональных трудностей и
@@ -15,7 +15,7 @@ const Hero = () => {
 
             <div className="hero-img">
                 <div>
-                    <img src="./assets/images/hero-avatar.png" alt=""/>
+                    <img src="./assets/images/hero-avatar.png" alt="Фотография психолога"/>
                 </div>
             </div>
         </section>

@@ -43,6 +43,12 @@
     top: 0.35rem;
 }
 
+@media (max-width: 1024px) {
+    .education-card {
+        min-height: 24rem;
+    }
+}
+
 @media (max-width: 768px) {
     .education-card {
         margin: 0;
@@ -57,6 +63,6 @@
 
 @media (max-width: 600px) {
     .education-card {
-        min-height: 23rem;
+        min-height: 25.5rem;
     }
 }

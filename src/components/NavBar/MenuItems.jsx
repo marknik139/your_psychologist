@@ -2,8 +2,8 @@ const MenuItems = () => {
     return (
         <>
             <section className="logo">
-                <span className="logo-title">Уютный психолог</span>
                 <img className="logo-image" src="./assets/images/logo.svg" alt="Логитип сайта мозг"/>
+                <span className="logo-title">Уютный психолог</span>
             </section>
             <ul>
                 <li>

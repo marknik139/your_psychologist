@@ -32,6 +32,10 @@ a {
     margin: 0 1rem 1.3rem;
 }
 
+.price.most-expensive {
+    background: linear-gradient(90deg, #e88e08 0%, #f5f109 100%);
+}
+
 .price-card ul li {
     list-style: none;
     font-size: 0.9rem;

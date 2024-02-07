@@ -28,8 +28,8 @@ const Prices = () => {
         <section className="prices-container" id="prices">
             <h5>Цены</h5>
             <div className="prices-content">
-                {PRICES.map((item) => (
-                    <PriceCard key={item.title} item={item} country={country}/>
+                {PRICES.map((item, index) => (
+                    <PriceCard key={item.title} item={item} index={index} country={country}/>
                 ))}
             </div>
         </section>

@@ -18,7 +18,7 @@ const Navbar = () => {
             <nav className="nav-wrapper">
                 <div className="nav-content">
                     <MenuItems/>
-                    <button className="menu-btn" onClick={toggleMenu}>
+                    <button className="menu-btn" aria-label="Открыть меню" onClick={toggleMenu}>
                         { openMenu ? <CloseIcon/> : <MenuOutlinedIcon />}
                     </button>
                 </div>

@@ -32,9 +32,11 @@ const MenuItems = () => {
                 <li>
                     <a className="menu-item" href="#contacts" onClick={(event) => handleClick(event, 'contacts')}>Контакты</a>
                 </li>
-                <button className="contact-btn">
-                    <a className="menu-item menu-button" href="#contacts" onClick={(event) => handleClick(event, 'contacts')}>Написать мне</a>
-                </button>
+                <li>
+                    <button className="contact-btn">
+                        <a className="menu-item menu-button" href="#contacts" onClick={(event) => handleClick(event, 'contacts')}>Написать мне</a>
+                    </button>
+                </li>
             </ul>
         </>
     )

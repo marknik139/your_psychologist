@@ -111,14 +111,14 @@ const ContactForm = () => {
                 <input
                     type="email"
                     name="email"
-                    placeholder="Ваш Email *"
+                    placeholder="Ваш Email для обратной связи *"
                     value={formData.email}
                     onChange={handleChange}
                     required
                 />
                 <textarea
                     name="message"
-                    placeholder="Ваше сообщение *"
+                    placeholder="Ваше сообщение в свободной форме *"
                     rows={3}
                     value={formData.message}
                     onChange={handleChange}

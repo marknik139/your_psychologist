@@ -1,4 +1,15 @@
 const MenuItems = () => {
+
+    const handleClick = (event, targetId) => {
+        event.preventDefault();
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            const yOffset = -100;
+            const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+    };
+
     return (
         <>
             <section className="logo">
@@ -7,22 +18,22 @@ const MenuItems = () => {
             </section>
             <ul>
                 <li>
-                    <a className="menu-item" href="#hero">Главная</a>
+                    <a className="menu-item" href="#hero" onClick={(event) => handleClick(event, 'hero')}>Главная</a>
                 </li>
                 <li>
-                    <a className="menu-item" href="#cases">С чем я работаю</a>
+                    <a className="menu-item" href="#cases" onClick={(event) => handleClick(event, 'cases')}>С чем я работаю</a>
                 </li>
                 <li>
-                    <a className="menu-item" href="#education">Мое образование</a>
+                    <a className="menu-item" href="#education" onClick={(event) => handleClick(event, 'education')}>Мое образование</a>
                 </li>
                 <li>
-                    <a className="menu-item" href="#prices">Цены</a>
+                    <a className="menu-item" href="#prices" onClick={(event) => handleClick(event, 'prices')}>Цены</a>
                 </li>
                 <li>
-                    <a className="menu-item" href="#contacts">Контакты</a>
+                    <a className="menu-item" href="#contacts" onClick={(event) => handleClick(event, 'contacts')}>Контакты</a>
                 </li>
                 <button className="contact-btn">
-                    <a className="menu-item menu-button" href="#contacts">Написать мне</a>
+                    <a className="menu-item menu-button" href="#contacts" onClick={(event) => handleClick(event, 'contacts')}>Написать мне</a>
                 </button>
             </ul>
         </>

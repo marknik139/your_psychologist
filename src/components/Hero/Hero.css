@@ -60,7 +60,10 @@
 }
 
 .hero-img > div > img {
-    border-radius: 0.5rem;
+    border-radius: 2rem;
+    -webkit-box-shadow: 3px 4px 9px 1px rgba(3,31,8,0.5);
+    -moz-box-shadow: 3px 4px 9px 1px rgba(3,31,8,0.5);
+    box-shadow: 3px 4px 9px 1px rgba(3,31,8,0.5);
     width: 30rem;
     transition: all 0.3s ease;
 }

@@ -16,10 +16,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #32a854;
+    color: var(--color-primary);
     border-radius: 0.65rem;
-    border: 1.5px solid #32a854;
-    background: #021205;
+    border: 1.5px solid var(--color-primary);
+    background: var(--color-dark);
     position: absolute;
     top: 55%;
     z-index: 2;

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@500&display=swap');
 
 .nav-wrapper {
-    background: rgba(0, 0, 0, 0.35);
+    background: var(--color-black-transponent);
     padding: 0.5rem 0;
     position: sticky;
     top: 0;
@@ -52,7 +52,7 @@
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 500;
-    color: #fff;
+    color: var(--color-white);
     position: relative;
     cursor: pointer;
 }
@@ -61,7 +61,7 @@
     content: " ";
     width: 2rem;
     height: 0.2rem;
-    background: linear-gradient(90deg, #32a854 0%, #9dbd29 100%);
+    background: var(--color-gradient-green-90);
     border-radius: 0.5rem;
     position: absolute;
     bottom: -0.6rem;
@@ -82,8 +82,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
-    background: linear-gradient(90deg, #32a854 0%, #9dbd29 100%);
+    color: var(--color-white);
+    background: var(--color-gradient-green-90);
     padding: 0.6rem 2rem;
     border: none;
     outline: 1.5px solid transparent;
@@ -93,9 +93,9 @@
 }
 
 .contact-btn:hover {
-    color: #32a854;
+    color: var(--color-primary);
     background: #000;
-    outline: 1.5px solid #32a854;
+    outline: 1.5px solid var(--color-primary);
 }
 
 .menu-btn {
@@ -106,8 +106,8 @@
     justify-content: center;
     border: none;
     border-radius: 0.4rem;
-    color: #fff;
-    background: linear-gradient(90deg, #32a854 0%, #9dbd29 100%);
+    color: var(--color-white);
+    background: var(--color-gradient-green-90);
     line-height: 0;
     cursor: pointer;
     transition: all 0.4s ease;
@@ -115,9 +115,9 @@
 }
 
 .menu-btn:hover {
-    color: #32a854;
-    background: #000;
-    border: 1px solid #257a3d;
+    color: var(--color-primary);
+    background: var(--color-black);
+    border: 1px solid var(--color-primary);
 }
 
 @media (max-width: 425px) {

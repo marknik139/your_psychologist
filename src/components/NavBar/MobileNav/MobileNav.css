@@ -2,13 +2,13 @@
     width: 100vw;
     height: 100vh;
     display: none;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: var(--color-black-transponent);
     position: fixed;
     left: 0;
     top: 0;
     z-index: 999 !important;
     opacity: 0;
-    box-shadow: 0px 29px 80px rgba(0, 0, 0, 0.3);
+    box-shadow: var(--shadow-primary);
     transition: all 0.3s ease;
     transform: translateX(-100vw);
 }
@@ -16,10 +16,10 @@
 .mobile-menu-container {
     width: 60vw;
     height: 100vh;
-    background-color: #257a3d;
-    -webkit-box-shadow: 3px 4px 9px 1px rgba(3,31,8,1);
-    -moz-box-shadow: 3px 4px 9px 1px rgba(3,31,8,1);
-    box-shadow: 3px 4px 9px 1px rgba(3,31,8,1);
+    background-color: var(--color-primary-darken);
+    -webkit-box-shadow: var(--shadow-primary);
+    -moz-box-shadow: var(--shadow-primary);
+    box-shadow: var(--shadow-primary);
     padding: 2rem;
 }
 

@@ -1,5 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
+:root {
+  --color-black-transponent: rgba(0, 0, 0, 0.35);
+  --color-white: #fff;
+  --color-black: #000;
+  --color-primary: #32a854;
+  --color-secandary: #9dbd29;
+  --color-primary-darken: #257a3d;
+  --color-dark: rgba(0, 26, 8, 0.8);
+  --color-dark-non-transponent: rgba(0, 26, 8, 1);
+  --shadow-primary: 3px 4px 9px 1px rgba(3, 31, 8, 1);
+  --color-gradient-green-90: linear-gradient(90deg, #32a854 0%, #9dbd29 100%);
+  --color-gradient-green-180: linear-gradient(180deg, #32a854 0%, #9dbd29 100%);
+  --color-gradient-yellow-90: linear-gradient(90deg, #e88e08 0%, #f5f109 100%);
+}
+
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;

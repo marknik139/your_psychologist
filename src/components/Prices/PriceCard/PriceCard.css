@@ -1,7 +1,7 @@
 .price-card {
-    background: rgba(0, 26, 8, 1);
+    background: var(--color-dark-non-transponent);
     border-radius: 0.65rem;
-    border: 1.5px solid #32a854;
+    border: 1.5px solid var(--color-primary);
     padding: 1.5rem;
     margin: 0 1rem;
     min-height: 19rem;
@@ -10,7 +10,7 @@
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--color-white);
 }
 
 .price-card h6 {
@@ -26,14 +26,14 @@ a {
     justify-content: center;
     font-size: 1.5rem;
     font-weight: 400;
-    background: linear-gradient(90deg, #32a854 0%, #9dbd29 100%);
+    background: var(--color-gradient-green-90);
     border-radius: 0.3rem;
     padding: 0.4rem 0.6rem;
     margin: 0 1rem 1.3rem;
 }
 
 .price.most-expensive {
-    background: linear-gradient(90deg, #e88e08 0%, #f5f109 100%);
+    background: var(--color-gradient-yellow-90);
 }
 
 .price-card ul li {
@@ -48,7 +48,7 @@ a {
     content: " ";
     width: 0.5rem;
     height: 0.5rem;
-    background-color: #32a854;
+    background-color: var(--color-primary);
     border-radius: 0.5rem;
     position: absolute;
     left: -1.3rem;

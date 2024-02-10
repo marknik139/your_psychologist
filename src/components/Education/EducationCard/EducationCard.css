@@ -1,7 +1,7 @@
 .education-card {
-    background: rgba(0, 26, 8, 1);
+    background: var(--color-dark-non-transponent);
     border-radius: 0.65rem;
-    border: 1.5px solid #32a854;
+    border: 1.5px solid var(--color-primary);
     padding: 1.5rem;
     margin: 0 1rem;
     min-height: 19rem;
@@ -17,7 +17,7 @@
     display: inline-block;
     font-size: 0.7rem;
     font-weight: 400;
-    background: linear-gradient(180deg, #32a854 0%, #9dbd29 100%);
+    background: var(--color-gradient-green-180);
     border-radius: 0.3rem;
     padding: 0.4rem 0.6rem;
     margin-bottom: 1.3rem;
@@ -36,7 +36,7 @@
     content: " ";
     width: 0.5rem;
     height: 0.5rem;
-    background-color: #32a854;
+    background-color: var(--color-primary);
     border-radius: 0.5rem;
     position: absolute;
     left: -1.3rem;

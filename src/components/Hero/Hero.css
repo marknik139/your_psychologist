@@ -10,7 +10,7 @@
     width: 28.125rem;
     height: 28.125rem;
     border-radius: 28.125rem;
-    background: #32a854;
+    background: var(--color-primary);
     position: absolute;
     z-index: -1;
     filter: blur(225px);
@@ -61,9 +61,9 @@
 
 .hero-img > div > img {
     border-radius: 0.5rem;
-    -webkit-box-shadow: 3px 4px 9px 1px rgba(3,31,8,0.5);
-    -moz-box-shadow: 3px 4px 9px 1px rgba(3,31,8,0.5);
-    box-shadow: 3px 4px 9px 1px rgba(3,31,8,0.5);
+    -webkit-box-shadow: var(--shadow-primary);
+    -moz-box-shadow: var(--shadow-primary);
+    box-shadow: var(--shadow-primary);
     width: 30rem;
     transition: all 0.3s ease;
 }

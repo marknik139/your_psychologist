@@ -19,34 +19,34 @@ form textarea {
     flex: 1;
     width: 100%;
     font-size: 0.9rem;
-    color: #fff;
-    background: #021205;
+    color: var(--color-white);
+    background: var(--color-dark);
     border-radius: 0.6rem;
-    border: 1.5px solid #32a854;
+    border: 1.5px solid var(--color-primary);
     padding: 1rem;
 }
 
 form input:focus,
 form textarea:focus {
     outline: none !important;
-    border-color: #9dbd29;
-    box-shadow: 0 0 10px #32a854;
+    border-color: var(--color-secandary);
+    box-shadow: var(--shadow-primary);
 }
 
 form button {
     font-size: 1rem;
     font-weight: 500;
-    color: #fff;
-    border: 1.5px solid #32a854;
+    color: var(--color-white);
+    border: 1.5px solid var(--color-primary);
     border-radius: 0.6rem;
-    background: linear-gradient(180deg, #32a854 0%, #9dbd29 100%);
+    background: var(--color-gradient-green-180);
     padding: 0.7rem;
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
 form button:hover {
-    color: #32a854;
+    color: var(--color-primary);
     background: transparent;
 }
 
